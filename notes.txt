@@ -1,0 +1,18 @@
+----------------------------------------------------------------DATE FORMATTING NOTES----------------------------------------------------------------
+
+const moment = require('moment');
+const date_ = new Date(moment.utc().format())
+console.log(moment.utc(date_).local().format('YYYY-MMM-DD'));
+
+
+----------------------------------------------------------------USER CAPABILITIES----------------------------------------------------------------
+
+USER CAN -
+1. DELETE THEIR OWN POSTS ✅
+2. CREATE THEIR OWN POSTS ✅
+3. UPDATE THEIR OWN POSTS ✅
+4. CREATE A LOAF ✅
+
+----------------------------------------------------------------LOGOUT NOTES----------------------------------------------------------------
+
+COMPLETE LOGOUT BY DESTROYING TOKEN ON CLIENT SIDE TO RENDER LOGGING IN WITHOUT CREATING ANOTHER TOKEN IMPOSSIBLE. EG. BY CHANGING THE TOKEN WITH AN A RANDOM KEY OR SOMTHING.
